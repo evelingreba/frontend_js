@@ -95,6 +95,10 @@
   transform: translate(-50%, -50%);
   right: 0;
   z-index: 1;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .prev {
@@ -103,6 +107,10 @@
   transform: translate(-50%, -50%);
   left: 25px;
   z-index: 1;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .controls img {
