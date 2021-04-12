@@ -219,11 +219,13 @@ Tiny slider for all purposes, inspired by [Owl Carousel](https://owlcarousel2.gi
 ```
 
 #### 2. Add markup
+
 ```html
-<div class="my-slider">
-  <div></div>
-  <div></div>
-  <div></div>
+
+<div class="banner__slider-item">
+    <div></div>
+    <div></div>
+    <div></div>
 </div>
 <!-- or ul.my-slider > li -->
 ```

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
-    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script><![endif]-->
     
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -15,6 +14,7 @@
     <meta name="description" content="">
     
     <title>BikeShop | Home</title>
+    
 </head>
 <body>
 
@@ -22,7 +22,9 @@
     <header class="header">
         <div class="header__content">
             <div class="header__logo">
-                <img src="assets/images/THE_BIKE_SHOP_LOGO.png" alt="The Bike Shop Logo">
+                <a title="bike shop logo" href="#">
+                    <img src="assets/images/THE_BIKE_SHOP_LOGO.png" alt="The Bike Shop Logo">
+                </a>
             </div>
     
             <ul class="header__nav-list">
@@ -60,18 +62,18 @@
 
     <section class="banner">
         <div class="banner__content">
-            <div class="slider">
+            <div class="banner__slider">
     
-                <div class="controls" id="customize-controls">
-                    <div class="prev">
+                <div id="banner__customize-controls">
+                    <div class="banner__slider-prev">
                         <img src="assets/images/LEFT_BUTTON_ACTIVE.png" alt="nav">
                     </div>
-                    <div class="next">
+                    <div class="banner__slider-next">
                         <img src="assets/images/RIGHT_BUTTON_ACTIVE.png" alt="nav">
                     </div>
                 </div>
     
-                <div class="my-slider">
+                <div class="banner__slider-item">
                     <div>
                         <img src="assets/images/Slider_Photo01.png" alt="image 1">
                     </div>
@@ -90,18 +92,20 @@
     
     
             <div class="banner__text">
-                <h1>HANDMADE BICYCLE</h1>
-                <p>You <span class="yellow">create</span> the <span class="yellow">journey,</span> we supply the <span
-                        class="yellow">parts.</span></p>
+                <h>HANDMADE BICYCLE</h>
+                <p>You <span class="banner__text-color">create</span> the <span class="banner__text-color">journey,</span>
+                    we supply the <span
+                            class="banner__text-color">parts.</span></p>
                 <div class="banner__text-button">
                     <a title="banner__button" class="banner__button" href="#">
                         <img src="assets/images/BANNER_BUTTON.png" alt="Shop Bikes">
                     </a>
                 </div>
-            </div>
     
-            <div class="scroll-icon">
-                <img src="assets/images/SCROLL_ICON.png" alt="scroll icon">
+    
+                <div class="banner__scroll-icon">
+                    <img src="assets/images/SCROLL_ICON.png" alt="scroll icon">
+                </div>
             </div>
         </div>
     </section>
@@ -110,16 +114,270 @@
         <div class="bikes__content">
             <div class="bikes__title"><h3>POPULAR BIKES</h3></div>
             <ul class="bikes__nav">
-                <li class="bikes__nav-item">
-                    <p>FIXED / SINGLE SPEED</p>
+                <li class="bikes__nav-item bikes__single-speed">
+                    <button type="button" id="bikes__single-button">FIXED / SINGLE SPEED</button>
                 </li>
-                <li class="bikes__nav-item">
-                    <p>PREMIUM SERIES</p>
+                <li class="bikes__nav-item bikes__premium-series">
+                    <button type="button" id="bikes__premium-button">PREMIUM SERIES</button>
                 </li>
-                <li class="bikes__nav-item">
-                    <p>CITY BIKES</p>
+                <li class="bikes__nav-item bikes__city">
+                    <button type="button" id="bikes__city-button">CITY BIKES</button>
                 </li>
             </ul>
+    
+            <div class="bikes__customize-controls">
+                <div class="bikes__slider-prev">
+                    <img src="assets/images/LEFT_BUTTON_BLACK.png" alt="nav">
+                </div>
+                <div class="bikes__slider-next">
+                    <img src="assets/images/RIGHT_BUTTON_BLACK.png" alt="nav">
+                </div>
+            </div>
+    
+            <div class="bikes__single-slider" id="bikes__single-speed">
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/single-speed1.jpg" alt="Single Speed Bike">
+                    </div>
+                    <p>Single Speed Bike 1</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/single-speed2.jpg" alt="Single Speed Bike">
+                    </div>
+                    <p>Single Speed Bike 2</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/single-speed3.jpg" alt="Single Speed Bike">
+                    </div>
+                    <p>Single Speed Bike 3</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/single-speed4.jpg" alt="Single Speed Bike">
+                    </div>
+                    <p>Single Speed Bike 4</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/single-speed5.jpg" alt="Single Speed Bike">
+                    </div>
+                    <p>Single Speed Bike 5</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/single-speed6.jpg" alt="Single Speed Bike">
+                    </div>
+                    <p>Single Speed Bike 6</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="bikes__premium-slider" id="bikes__premium-series">
+    
+                <div class="bikes__customize-controls">
+                    <div class="bikes__slider-prev">
+                        <img src="assets/images/LEFT_BUTTON_ACTIVE.png" alt="nav">
+                    </div>
+                    <div class="bikes__slider-next">
+                        <img src="assets/images/RIGHT_BUTTON_ACTIVE.png" alt="nav">
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/premium-series1.jpg" alt="Premium Series Bike">
+                    </div>
+                    <p>Premium Series Bike 1</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/premium-series2.jpg" alt="Premium Series Bike">
+                    </div>
+                    <p>Premium Series Bike 2</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/premium-series3.jpg" alt="Premium Series Bike">
+                    </div>
+                    <p>Premium Series Bike 3</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/premium-series4.png" alt="Premium Series Bike">
+                    </div>
+                    <p>Premium Series Bike 4</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/premium-series5.jpg" alt="Premium Series Bike">
+                    </div>
+                    <p>Premium Series Bike 5</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/premium-series6.jpg" alt="Premium Series Bike">
+                    </div>
+                    <p>Premium Series Bike 6</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="bikes__city-slider" id="bikes__city">
+    
+                <div class="bikes__customize-controls">
+                    <div class="bikes__slider-prev">
+                        <img src="assets/images/LEFT_BUTTON_ACTIVE.png" alt="nav">
+                    </div>
+                    <div class="bikes__slider-next">
+                        <img src="assets/images/RIGHT_BUTTON_ACTIVE.png" alt="nav">
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/city-bike1.jpg" alt="City Bike">
+                    </div>
+                    <p>City Bike 1</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/city-bike2.jpg" alt="City Bike">
+                    </div>
+                    <p>City Bike 2</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/city-bike3.jpg" alt="City Bike">
+                    </div>
+                    <p>City Bike 3</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/city-bike4.jpg" alt="City Bike">
+                    </div>
+                    <p>City Bike 4</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/city-bike5.jpg" alt="City Bike">
+                    </div>
+                    <p>City Bike 5</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="bikes__slider-item">
+                    <div>
+                        <img src="assets/images/city-bike6.jpg" alt="City Bike">
+                    </div>
+                    <p>City Bike 6</p>
+                    <div class="bikes__slider-button">
+                        <a href="#" title="Buy">
+                            <button title="Buy Button" type="button">BUY</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -129,5 +387,6 @@
 
 <script src="assets/js/app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
 </body>
 </html>

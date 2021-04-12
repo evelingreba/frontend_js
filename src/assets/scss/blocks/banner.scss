@@ -2,7 +2,7 @@
   background-color: black;
   background-image: linear-gradient(to top, rgba(54, 8, 8, 0.7), rgba(54, 8, 8, 0.7));
   color: #ffffff;
-  height: calc(100vh - #{$headerHeight});
+  min-height: calc(100vh - #{$headerHeight});
   position: relative;
 
   @include breakpoint($desktop-bp) {
@@ -11,7 +11,7 @@
 }
 
 .banner__content {
-  height: 100%;
+  height: calc(100vh - #{$headerHeight});
   padding: 20px;
   z-index: 1;
 
@@ -33,29 +33,27 @@
   margin: 0 auto;
 }
 
-.scroll-icon {
+.banner__scroll-icon {
   display: none;
 
   @include breakpoint($tablet-bp) {
     display: block;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+    margin-top: 50px;
+    margin-left: 45%;
   }
 }
 
 
-.yellow {
+.banner__text-color {
   color: yellow;
 }
 
-.controls {
+#banner__customize-controls {
   vertical-align: center;
   z-index: 2;
 }
 
-.slider {
+.banner__slider {
   position: relative;
 
   &:after {
@@ -77,9 +75,8 @@
 }
 
 
-.my-slider img {
-  height: auto;
-  width: 100%;
+.banner__slider-item {
+  max-height: calc(100vh - #{$headerHeight});
   border-radius: 5%;
 
   @include breakpoint($desktop-bp) {
@@ -88,8 +85,18 @@
   }
 }
 
+.banner__slider-item img {
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
 
-.next {
+  @include breakpoint($desktop-bp) {
+    border-radius: 0;
+  }
+}
+
+
+.banner__slider-next {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -101,7 +108,7 @@
   }
 }
 
-.prev {
+.banner__slider-prev {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -113,6 +120,6 @@
   }
 }
 
-.controls img {
+#banner__customize-controls img {
   width: 32px;
 }

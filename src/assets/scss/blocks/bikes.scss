@@ -4,8 +4,14 @@
 }
 
 .bikes__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @include content_max-width;
   padding: 20px;
+  position: relative;
+  height: calc(100vh - #{$headerHeight});
 }
 
 .bikes__nav-item {
@@ -13,4 +19,63 @@
   border: 2px solid black;
   padding: 10px 20px 10px 20px;
   text-align: left;
+}
+
+.bikes__single-slider,
+.bikes__premium-slider,
+.bikes__city-slider {
+  position: relative;
+
+}
+
+.bikes__slider-item img {
+  max-height: 400px;
+}
+
+#bikes__single-speed {
+  display: block;
+  position: relative;
+}
+
+#bikes__premium-series {
+  display: none;
+}
+
+#bikes__city {
+  display: none;
+}
+
+.bikes__slider-next {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 0;
+  z-index: 1;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.bikes__slider-prev {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 25px;
+  z-index:1;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.bikes__customize-controls img {
+  width: 32px;
+  z-index: 1;
+}
+
+.bikes__customize-controls {
+  width: 1500px;
+  position: absolute;
+  z-index: 1;
 }
