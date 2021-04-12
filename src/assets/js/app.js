@@ -39,6 +39,7 @@ var bikes__singleSlider = tns({
     controlsContainer: ".bikes__customize-controls",
     mouseDrag: true,
     lazyload: true,
+
 });
 
 bikes__singleSlider.play();
