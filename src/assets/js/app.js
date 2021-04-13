@@ -3,6 +3,7 @@ import * as url from "url";
 console.log('file 1');
 import { tns } from "../tiny-slider/src/tiny-slider";
 
+
     var slider = tns({
     container: '.banner__slider-item',
     items: 1,
@@ -25,7 +26,7 @@ var bikes__singleSlider = tns({
         320: {
             edgePadding: 20,
             gutter: 20,
-            items: 2
+            items: 2,
         },
         768: {
             gutter: 30,
@@ -39,7 +40,8 @@ var bikes__singleSlider = tns({
     controlsContainer: ".bikes__customize-controls",
     mouseDrag: true,
     lazyload: true,
-
+    overflow: false,
+    controlsPosition: top,
 });
 
 bikes__singleSlider.play();
@@ -51,7 +53,7 @@ var bikes__premiumSlider = tns({
         320: {
             edgePadding: 20,
             gutter: 20,
-            items: 2
+            items: 2,
         },
         768: {
             gutter: 30,
@@ -63,6 +65,9 @@ var bikes__premiumSlider = tns({
     },
     nav: false,
     controlsContainer: ".bikes__customize-controls",
+    mouseDrag: true,
+    lazyload: true,
+    overflow: false,
 });
 
 bikes__premiumSlider.play();
@@ -86,6 +91,10 @@ var bikes__citySlider = tns({
     },
     nav: false,
     controlsContainer: ".bikes__customize-controls",
+    mouseDrag: true,
+    lazyload: true,
+    overflow: false,
+
 });
 
 bikes__citySlider.play();
@@ -94,16 +103,43 @@ document.getElementById('bikes__single-button').onclick = function () {
     document.getElementById('bikes__single-speed').style.display = 'block';
     document.getElementById('bikes__premium-series').style.display = 'none';
     document.getElementById('bikes__city').style.display = 'none';
+
+    document.getElementById('bikes__single-button').style.backgroundColor = 'black';
+    document.getElementById('bikes__single-button').style.color = 'white';
+
+    document.getElementById('bikes__premium-button').style.backgroundColor = 'white';
+    document.getElementById('bikes__premium-button').style.color = 'black';
+
+    document.getElementById('bikes__city-button').style.backgroundColor = 'white';
+    document.getElementById('bikes__city-button').style.color = 'black';
 }
 
 document.getElementById('bikes__premium-button').onclick = function () {
     document.getElementById('bikes__premium-series').style.display = 'block';
     document.getElementById('bikes__single-speed').style.display = 'none';
     document.getElementById('bikes__city').style.display = 'none';
+
+    document.getElementById('bikes__premium-button').style.backgroundColor = 'black';
+    document.getElementById('bikes__premium-button').style.color = 'white';
+
+    document.getElementById('bikes__single-button').style.backgroundColor = 'white';
+    document.getElementById('bikes__single-button').style.color = 'black';
+
+    document.getElementById('bikes__city-button').style.backgroundColor = 'white';
+    document.getElementById('bikes__city-button').style.color = 'black';
 }
 
 document.getElementById('bikes__city-button').onclick = function () {
     document.getElementById('bikes__city').style.display = 'block';
     document.getElementById('bikes__premium-series').style.display = 'none';
     document.getElementById('bikes__single-speed').style.display = 'none';
+
+    document.getElementById('bikes__city-button').style.backgroundColor = 'black';
+    document.getElementById('bikes__city-button').style.color = 'white';
+
+    document.getElementById('bikes__single-button').style.backgroundColor = 'white';
+    document.getElementById('bikes__single-button').style.color = 'black';
+
+    document.getElementById('bikes__premium-button').style.backgroundColor = 'white';
+    document.getElementById('bikes__premium-button').style.color = 'black';
 }

@@ -631,37 +631,35 @@ a {
   height: calc(100vh - 110px); }
 
 .bikes__content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  display: block;
+  position: relative;
+  height: calc(100vh - 110px);
   max-width: 1600px;
   margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  height: calc(100vh - 110px); }
+  padding: 20px; }
 
 .bikes__nav-item {
-  display: inline-block;
+  display: block;
+  text-align: center;
   border: 2px solid black;
   padding: 10px 20px 10px 20px;
-  text-align: left; }
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    .bikes__nav-item {
+      display: inline-block;
+      border: 2px solid black;
+      padding: 10px 20px 10px 20px;
+      text-align: left; } }
 
 .bikes__single-slider,
 .bikes__premium-slider,
 .bikes__city-slider {
   position: relative; }
 
-.bikes__slider-item img {
-  max-height: 400px; }
-
 #bikes__single-speed {
-  display: block;
-  position: relative; }
+  display: block; }
 
 #bikes__premium-series {
   display: none; }
@@ -670,30 +668,27 @@ a {
   display: none; }
 
 .bikes__slider-next {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  right: 0;
-  z-index: 1; }
+  display: inline-block;
+  text-align: right; }
   .bikes__slider-next:hover {
     cursor: pointer; }
 
 .bikes__slider-prev {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  left: 25px;
-  z-index: 1; }
+  display: inline-block;
+  margin-right: 80%;
+  text-align: left; }
+  @media screen and (min-width: 1025px) {
+    .bikes__slider-prev {
+      margin-right: 90%; } }
   .bikes__slider-prev:hover {
     cursor: pointer; }
 
 .bikes__customize-controls img {
-  width: 32px;
+  width: 24px;
   z-index: 1; }
+  @media screen and (min-width: 1025px) {
+    .bikes__customize-controls img {
+      width: 32px; } }
 
 .bikes__customize-controls {
-  width: 1500px;
-  position: absolute;
   z-index: 1; }

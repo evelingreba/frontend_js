@@ -2,10 +2,11 @@
   background-color: black;
   background-image: linear-gradient(to top, rgba(54, 8, 8, 0.7), rgba(54, 8, 8, 0.7));
   color: #ffffff;
-  min-height: calc(100vh - #{$headerHeight});
+  height: 100%;
   position: relative;
 
   @include breakpoint($desktop-bp) {
+    height: calc(100vh - #{$headerHeight});
     font-size: 2em;
   }
 }
@@ -36,7 +37,7 @@
 .banner__scroll-icon {
   display: none;
 
-  @include breakpoint($tablet-bp) {
+  @include breakpoint($desktop-bp) {
     display: block;
     margin-top: 50px;
     margin-left: 45%;
