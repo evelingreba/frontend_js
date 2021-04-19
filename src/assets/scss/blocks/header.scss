@@ -11,22 +11,27 @@
   &:after {
     filter: blur(4px);
   }
-}
 
-.header__content {
-  display: flex;
-  position: relative;
-  @include content_max-width;
-}
+  &__content {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 0 auto;
+    @include content_max-width;
+  }
 
-.header__logo {
-  width: 100px;
-
-  @include breakpoint($desktop-bp) {
+  &__logo {
+    display: none;
     width: 150px;
+  }
+
+  &__nav-list img {
+    padding: 10px;
   }
 }
 
-.header__nav-list img {
-  padding: 10px;
+@include desktop {
+  .header__logo {
+    display: block;
+  }
 }

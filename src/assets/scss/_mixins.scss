@@ -1,9 +1,27 @@
 @mixin breakpoint($br) {
 
-  @media screen and (min-width: $br){
+  @media screen and (min-width: $br) {
     @content;
   }
 
+}
+
+@mixin tablet($size: 768px) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin desktop($size: 1025px) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin landscape($size: 768px) {
+  @media screen and (min-height: $size) {
+    @content;
+  }
 }
 
 @mixin content_max-width {

@@ -3,49 +3,43 @@ layout: default
 title: BikeShop | Home
 ---
 <section class="banner">
-    <div class="banner__content">
-        <div class="banner__slider">
 
-            <div id="banner__customize-controls">
-                <div class="banner__slider-prev">
-                    <img src="assets/images/LEFT_BUTTON_ACTIVE.png" alt="nav">
-                </div>
-                <div class="banner__slider-next">
-                    <img src="assets/images/RIGHT_BUTTON_ACTIVE.png" alt="nav">
-                </div>
-            </div>
+    <div class="banner__slider">
 
-            <div class="banner__slider-item">
-                <div>
-                    <img src="assets/images/Slider_Photo01.png" alt="image 1">
-                </div>
-                <div>
-                    <img src="assets/images/Slider2.jpg" alt="image 2">
-                </div>
-                <div>
-                    <img src="assets/images/Slider3.jpg" alt="image 3">
-                </div>
-                <div>
-                    <img src="assets/images/Slider4.jpg" alt="image 4">
-                </div>
-            </div>
+        <div class="banner__slider-item">
+            <img class="banner__slider-image" src="assets/images/Slider_Photo01.png" alt="image 1">
         </div>
-
-
-        <div class="banner__text">
-            <h3>HANDMADE BICYCLE</h3>
-            <p>You <span class="banner__text-color">create</span> the <span class="banner__text-color">journey,</span>
-                we supply the <span
-                        class="banner__text-color">parts.</span></p>
-            <a title="banner__button" class="banner__button" href="#">
-                <img src="assets/images/BANNER_BUTTON.png" alt="Shop Bikes">
-            </a>
-
-            <div class="banner__scroll-icon">
-                <img src="assets/images/SCROLL_ICON.png" alt="scroll icon">
-            </div>
+        <div class="banner__slider-item">
+            <img class="banner__slider-image" src="assets/images/Slider2.jpg" alt="image 2">
+        </div>
+        <div class="banner__slider-item">
+            <img class="banner__slider-image" src="assets/images/Slider3.jpg" alt="image 3">
+        </div>
+        <div class="banner__slider-item">
+            <img class="banner__slider-image" src="assets/images/Slider4.jpg" alt="image 4">
         </div>
     </div>
+
+    <div class="banner__nav">
+        <img class="banner__nav-item banner__nav-item--prev" src="assets/images/LEFT_BUTTON_ACTIVE.png" alt="nav">
+        <img class="banner__nav-item banner__nav-item--next" src="assets/images/RIGHT_BUTTON_ACTIVE.png" alt="nav">
+    </div>
+
+    <div class="banner__content">
+        <div class="banner__text">
+            <h3 class="banner__title">HANDMADE BICYCLE</h3>
+            <p class="banner__sub-title">You <span class="banner__sub-title--highlighted">create</span> the <span
+                    class="banner__sub-title--highlighted">journey,</span>
+                we supply the <span
+                        class="banner__sub-title--highlighted">parts.</span></p>
+            <a href="#" title="banner shop link" class="banner__shop-link">SHOP BIKES</a>
+        </div>
+    </div>
+
+    <div class="banner__scroll-icon-wrapper">
+        <img class="banner__scroll-icon" src="assets/images/SCROLL_ICON.png" alt="scroll icon">
+    </div>
+
 </section>
 
 <section class="bikes">
@@ -316,5 +310,13 @@ title: BikeShop | Home
                 </a>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="comments">
+    <div class="comments__content">
+        <h3 class="comments__title">Real Stories from Real Customers</h3>
+        <p class="comments__sub-title">Get inspired by these stories.</p>
+        <div class="comments__text" id="comments__text"></div>
     </div>
 </section>

@@ -1,0 +1,36 @@
+.comments {
+  min-height: 100vh;
+  background-image: url("/assets/images/CATEGORIES_BG_IMAGE.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    padding: 10% 20px;
+    @include content_max-width;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+}
+
+@include desktop {
+  .comments__content {
+    font-size: 18px;
+  }
+}

@@ -4,20 +4,18 @@
   @include breakpoint($desktop-bp) {
     background-color: yellow;
     border-radius: 5px;
-
     position: absolute;
     top: 100%;
     left: 0;
     padding: 0;
-
     box-shadow: 0 6px 8px rgba(0, 0, 0, .2);
   }
 }
 
 .header__subNav-link {
   display: none;
-  @include breakpoint($desktop-bp) {
 
+  @include breakpoint($desktop-bp) {
     display: block;
     padding: 22px;
     font-family: $fontFamily;
@@ -26,7 +24,6 @@
     font-size: 14px;
     color: #18191F;
     text-decoration: none;
-
     transition: background-color .2s linear;
 
     &:hover {

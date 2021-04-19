@@ -1,26 +1,13 @@
 .bikes {
   background-color: #FFFFFF;
-  height: 100%;
-
-  @include breakpoint($desktop-bp) {
-    height: calc(100vh - #{$headerHeight});
-  }
+  min-height: 100vh;
 }
 
 .bikes__content {
   display: block;
   position: relative;
-  height: auto;
+  padding: 10%;
   @include content_max-width;
-  padding: 20px;
-
-  @include breakpoint($tablet-bp) {
-    padding-top: 100px;
-  }
-
-  @include breakpoint($desktop-bp) {
-    padding-top: 200px;
-  }
 }
 
 .bikes__nav {
@@ -37,14 +24,6 @@
   height: 50px;
   margin: 20px auto;
   background-color: #ffffff;
-
-  @include breakpoint($desktop-bp) {
-    display: inline-block;
-    border: 2px solid black;
-    text-align: left;
-    width: 25%;
-    margin: 70px 20px;
-  }
 }
 
 #bikes__single-button,
@@ -64,10 +43,6 @@
 .bikes__premium-slider,
 .bikes__city-slider {
   position: relative;
-
-  @include breakpoint($desktop-bp) {
-    margin: 50px 0;
-  }
 }
 
 #bikes__single-speed {
@@ -102,10 +77,6 @@
 .bikes__customize-controls img {
   width: 24px;
   z-index: 1;
-
-  @include breakpoint($desktop-bp) {
-    width: 32px;
-  }
 }
 
 .bikes__customize-controls {
@@ -126,4 +97,26 @@
 
 .bikes__slider-text {
   font-weight: bold;
+}
+
+@include desktop {
+  .bikes {
+    &__nav-item {
+      display: inline-block;
+      border: 2px solid black;
+      text-align: left;
+      width: 25%;
+      margin: 70px 20px;
+    }
+
+    &__single-slider,
+    &__premium-slider,
+    &__city-slider {
+      margin: 50px 0;
+    }
+
+    &__customize-controls img {
+      width: 32px;
+    }
+  }
 }
