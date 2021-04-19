@@ -713,7 +713,7 @@ a {
 
 .comments {
   min-height: 100vh;
-  background-image: url("src/assets/images/CATEGORIES_BG_IMAGE.png");
+  background-image: url("/assets/images/CATEGORIES_BG_IMAGE.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
