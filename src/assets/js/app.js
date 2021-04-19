@@ -118,7 +118,6 @@ var bikes__citySlider = tns({
     overflow: false,
 
 });
-
 bikes__citySlider.play();
 
 document.getElementById('bikes__single-button').onclick = function () {
