@@ -4,7 +4,7 @@ title: BikeShop | Home
 ---
 <section class="banner">
 
-    <div class="banner__slider">
+    <div class="banner__slider js-banner__slider">
 
         <div class="banner__slider-item">
             <img class="banner__slider-image" src="assets/images/Slider_Photo01.png" alt="image 1">
@@ -20,7 +20,7 @@ title: BikeShop | Home
         </div>
     </div>
 
-    <div class="banner__nav">
+    <div class="banner__nav js-banner__nav">
         <img class="banner__nav-item banner__nav-item--prev" src="assets/images/LEFT_BUTTON_ACTIVE.png" alt="nav">
         <img class="banner__nav-item banner__nav-item--next" src="assets/images/RIGHT_BUTTON_ACTIVE.png" alt="nav">
     </div>
@@ -42,272 +42,311 @@ title: BikeShop | Home
 
 </section>
 
-<section class="bikes">
-    <div class="bikes__content">
-        <div class="bikes__title"><h3>POPULAR BIKES</h3></div>
-        <ul class="bikes__nav">
-            <li class="bikes__nav-item bikes__single-speed">
-                <button type="button" id="bikes__single-button">FIXED / SINGLE SPEED</button>
+<section class="products">
+    <div class="products__content js-products__content">
+        <h3 class="products__title">POPULAR BIKES</h3>
+        <ul class="products__nav">
+            <li class="products__nav-item">
+                <button type="button" id="js-products__single-button" data-action="showSingleBikes">FIXED / SINGLE
+                    SPEED
+                </button>
             </li>
-            <li class="bikes__nav-item bikes__premium-series">
-                <button type="button" id="bikes__premium-button">PREMIUM SERIES</button>
+            <li class="products__nav-item">
+                <button type="button" id="js-products__premium-button" data-action="showPremiumBikes">PREMIUM SERIES
+                </button>
             </li>
-            <li class="bikes__nav-item bikes__city">
-                <button type="button" id="bikes__city-button">CITY BIKES</button>
+            <li class="products__nav-item">
+                <button type="button" id="js-products__city-button" data-action="showCityBikes">CITY BIKES</button>
             </li>
         </ul>
 
-        <div class="bikes__customize-controls">
-            <div class="bikes__slider-prev">
+        <div class="products__customize-controls js-products__customize-controls">
+            <div class="products__slider-prev">
                 <img src="assets/images/LEFT_BUTTON_BLACK.png" alt="nav">
             </div>
-            <div class="bikes__slider-next">
+            <div class="products__slider-next">
                 <img src="assets/images/RIGHT_BUTTON_BLACK.png" alt="nav">
             </div>
         </div>
 
-        <div class="bikes__single-slider" id="bikes__single-speed">
+        <div class="products__slider js-products__single-slider" id="js-products__single-slider">
 
-            <div class="bikes__slider-item">
-                <div class="bikes__slider-img">
-                    <img src="assets/images/single-speed1.jpg" alt="Single Speed Bike">
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/single-speed1.jpg" alt="Single Speed Bike">
+                    </a>
                 </div>
-                <p class="bikes__slider-text">Single Speed Bike 1</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">Single Speed Bike 1</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
 
-            <div class="bikes__slider-item">
-
-                <img src="assets/images/single-speed2.jpg" alt="Single Speed Bike">
-
-                <p class="bikes__slider-text">Single Speed Bike 2</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/single-speed2.jpg" alt="Single Speed Bike">
+                    </a>
+                </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">Single Speed Bike 2</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
 
-            <div class="bikes__slider-item">
-
-                <img src="assets/images/single-speed3.jpg" alt="Single Speed Bike">
-
-                <p class="bikes__slider-text">Single Speed Bike 3</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/single-speed3.jpg" alt="Single Speed Bike">
+                    </a>
+                </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">Single Speed Bike 3</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
 
-            <div class="bikes__slider-item">
-
-                <img src="assets/images/single-speed4.jpg" alt="Single Speed Bike">
-
-                <p class="bikes__slider-text">Single Speed Bike 4</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/single-speed4.jpg" alt="Single Speed Bike">
+                    </a>
+                </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">Single Speed Bike 4</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
 
-            <div class="bikes__slider-item">
-
-                <img src="assets/images/single-speed5.jpg" alt="Single Speed Bike">
-
-                <p class="bikes__slider-text">Single Speed Bike 5</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/single-speed5.jpg" alt="Single Speed Bike">
+                    </a>
+                </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">Single Speed Bike 5</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
 
-            <div class="bikes__slider-item">
-
-                <img src="assets/images/single-speed6.jpg" alt="Single Speed Bike">
-
-                <p class="bikes__slider-text">Single Speed Bike 6</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/single-speed6.jpg" alt="Single Speed Bike">
+                    </a>
+                </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">Single Speed Bike 6</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
         </div>
 
 
-        <div class="bikes__premium-slider" id="bikes__premium-series">
+        <div class="products__slider js-products__premium-slider" id="js-products__premium-slider">
 
-            <div class="bikes__slider-item">
-                <div class="bikes__slider-img">
-                    <img src="assets/images/premium-series1.jpg" alt="Premium Series Bike">
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/premium-series1.jpg" alt="Premium Series Bike">
+                    </a>
                 </div>
-                <p class="bikes__slider-text">Premium Series Bike 1</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">Premium Series Bike 1</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
 
-            <div class="bikes__slider-item">
-                <div class="bikes__slider-img">
-                    <img src="assets/images/premium-series2.jpg" alt="Premium Series Bike">
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/premium-series2.jpg" alt="Premium Series Bike">
+                    </a>
                 </div>
-                <p class="bikes__slider-text">Premium Series Bike 2</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">Premium Series Bike 2</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
 
-            <div class="bikes__slider-item">
-                <div class="bikes__slider-img">
-                    <img src="assets/images/premium-series3.jpg" alt="Premium Series Bike">
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/premium-series3.jpg" alt="Premium Series Bike">
+                    </a>
                 </div>
-                <p class="bikes__slider-text">Premium Series Bike 3</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">Premium Series Bike 3</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
 
-            <div class="bikes__slider-item">
-                <div class="bikes__slider-img">
-                    <img src="assets/images/premium-series4.png" alt="Premium Series Bike">
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/premium-series4.png" alt="Premium Series Bike">
+                    </a>
                 </div>
-                <p class="bikes__slider-text">Premium Series Bike 4</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">Premium Series Bike 4</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
 
-            <div class="bikes__slider-item">
-                <div class="bikes__slider-img">
-                    <img src="assets/images/premium-series5.jpg" alt="Premium Series Bike">
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/premium-series5.jpg" alt="Premium Series Bike">
+                    </a>
                 </div>
-                <p class="bikes__slider-text">Premium Series Bike 5</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">Premium Series Bike 5</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
 
-            <div class="bikes__slider-item">
-                <div class="bikes__slider-img">
-                    <img src="assets/images/premium-series6.jpg" alt="Premium Series Bike">
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/premium-series6.jpg" alt="Premium Series Bike">
+                    </a>
                 </div>
-                <p class="bikes__slider-text">Premium Series Bike 6</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">Premium Series Bike 6</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
         </div>
 
 
-        <div class="bikes__city-slider" id="bikes__city">
+        <div class="products__slider js-products__city-slider" id="js-products__city-slider">
 
-            <div class="bikes__slider-item">
-                <div class="bikes__slider-img">
-                    <img src="assets/images/city-bike1.jpg" alt="City Bike">
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/city-bike1.jpg" alt="City Bike">
+                    </a>
                 </div>
-                <p class="bikes__slider-text">City Bike 1</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">City Bike 1</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
 
-            <div class="bikes__slider-item">
-                <div class="bikes__slider-img">
-                    <img src="assets/images/city-bike2.jpg" alt="City Bike">
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/city-bike2.jpg" alt="City Bike">
+                    </a>
                 </div>
-                <p class="bikes__slider-text">City Bike 2</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">City Bike 2</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
 
-            <div class="bikes__slider-item">
-                <div class="bikes__slider-img">
-                    <img src="assets/images/city-bike3.jpg" alt="City Bike">
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/city-bike3.jpg" alt="City Bike">
+                    </a>
                 </div>
-                <p class="bikes__slider-text">City Bike 3</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">City Bike 3</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
 
-            <div class="bikes__slider-item">
-                <div class="bikes__slider-img">
-                    <img src="assets/images/city-bike4.jpg" alt="City Bike">
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/city-bike4.jpg" alt="City Bike">
+                    </a>
                 </div>
-                <p class="bikes__slider-text">City Bike 4</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">City Bike 4</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
 
-            <div class="bikes__slider-item">
-                <div class="bikes__slider-img">
-                    <img src="assets/images/city-bike5.jpg" alt="City Bike">
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/city-bike5.jpg" alt="City Bike">
+                    </a>
                 </div>
-                <p class="bikes__slider-text">City Bike 5</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">City Bike 5</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
 
-            <div class="bikes__slider-item">
-                <div class="bikes__slider-img">
-                    <img src="assets/images/city-bike6.jpg" alt="City Bike">
+            <div class="products__slider-item">
+                <div class="products__slider-img">
+                    <a href="#" title="Product Page">
+                        <img src="assets/images/city-bike6.jpg" alt="City Bike">
+                    </a>
                 </div>
-                <p class="bikes__slider-text">City Bike 6</p>
-                <div class="bikes__price">$300</div>
-                <a href="#" title="Buy">
-                    <div class="bikes__slider-button">
-                        <button title="Buy" type="button">BUY</button>
-                    </div>
+                <a href="#" title="Product Page">
+                    <p class="products__slider-text line-clamp">City Bike 6</p>
                 </a>
+                <div class="products__price">$300</div>
+                <div class="products__slider-button">
+                    <button title="Buy" type="button">BUY</button>
+                </div>
             </div>
         </div>
     </div>
@@ -317,6 +356,44 @@ title: BikeShop | Home
     <div class="comments__content">
         <h3 class="comments__title">Real Stories from Real Customers</h3>
         <p class="comments__sub-title">Get inspired by these stories.</p>
-        <div class="comments__text" id="comments__text"></div>
+        <div class="comments__list" id="js-comments__list"></div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="contact__content">
+        <h3 class="contact__title">CONTACT US</h3>
+        <div class="contact__sub-title">Please contact us for all inquiries and purchase options.</div>
+        <form action="#" method="get">
+            <div>
+                <input type="text" name="name" placeholder="NAME" class="contact__name">
+                <input type="text" name="surname" placeholder="SURNAME" class="contact__name">
+            </div>
+            <div><input type="email" name="email" placeholder="USER@DOMAIN.COM" class="contact__field"></div>
+            <div><textarea name="message" placeholder="MESSAGE" class="contact__field"></textarea></div>
+            <div><label><span class="contact__label-title">Choose Bikes Category </span>
+                <label class="contact__radio"><input type="radio" name="contact__radio" value="Fixed / Single Speed">
+                    Fixed / Single
+                    Speed</label>
+                <label class="contact__radio"><input type="radio" name="contact__radio" value="Premium Series"> Premium
+                    Series</label>
+                <label class="contact__radio"><input type="radio" name="contact__radio" value="City Bikes"> City
+                    Bikes</label>
+            </label></div>
+            <div><label><span class="contact__label-title">Select Bikes Category </span>
+                <select name="contact__select" class="contact__select">
+                    <option selected value="Select Category">Select Category</option>
+                    <option value="Fixed / Single Speed">Fixed / Single Speed</option>
+                    <option value="Premium Series">Premium Series</option>
+                    <option value="City Bikes">City Bikes</option>
+                </select>
+            </label></div>
+
+
+            <label><input type="checkbox" name="agree"> I agree to the Bike Shop <a href="#" title="Terms & Conditions">Terms
+                & Conditions</a> and <a href="#" title="Privacy Policy">Privacy Policy</a>
+            </label>
+            <input type="submit" value="SEND" class="contact__send">
+        </form>
     </div>
 </section>

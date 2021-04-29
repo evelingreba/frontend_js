@@ -1,0 +1,83 @@
+.contact {
+  min-height: 100vh;
+  background-image: url("../images/CONTACT_US_BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    padding: 150px 20px;
+    max-width: 100%;
+    @include content_max-width;
+  }
+
+  &__field,
+  &__name {
+    border-radius: 5px;
+    padding: 10px;
+    //width: auto;
+    margin: 10px auto;
+    border: 1px solid grey;
+    width: 60%;
+  }
+
+  textarea {
+    width: 60%;
+  }
+
+  &__label-title {
+    display: block;
+    font-weight: bold;
+  }
+
+  &__radio {
+    display: block;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  &__select {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 204px;
+  }
+
+  &__send {
+    display: block;
+    width: 204px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: grey;
+    border: none;
+    color: white;
+
+    &:hover {
+      background-color: black;
+    }
+  }
+}
+
+@include tablet {
+  .contact {
+    font-size: 18px;
+
+    &__field {
+      width: 435px;
+    }
+
+    textarea {
+      width: 435px;
+    }
+
+    &__radio {
+      margin-left: 20%;
+    }
+
+    &__select {
+      width: 457px;
+    }
+
+  }
+}

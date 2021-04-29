@@ -12,9 +12,11 @@
   }
 }
 
-@mixin desktop($size: 1025px) {
+@mixin desktop($size: 1025px, $height: 1025px) {
   @media screen and (min-width: $size) {
-    @content;
+    @media screen and (min-height: $height){
+      @content;
+    }
   }
 }
 

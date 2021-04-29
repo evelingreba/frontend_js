@@ -116,6 +116,8 @@ export interface ResponsiveOptions {
 }
 
 export interface TinySliderSettings extends CommonOptions {
+    controlsPosition: Window;
+    overflow: boolean;
     /**
      * @defaultValue ".slider"
      */

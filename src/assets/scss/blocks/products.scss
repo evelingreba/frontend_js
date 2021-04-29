@@ -1,20 +1,19 @@
-.bikes {
+.products {
   background-color: #FFFFFF;
-  min-height: 100vh;
 }
 
-.bikes__content {
+.products__content {
   display: block;
   position: relative;
-  padding: 10%;
+  padding: 100px 20px;
   @include content_max-width;
 }
 
-.bikes__nav {
+.products__nav {
   padding: 0;
 }
 
-.bikes__nav-item {
+.products__nav-item {
   display: block;
   text-align: center;
   border: 2px solid black;
@@ -26,38 +25,36 @@
   background-color: #ffffff;
 }
 
-#bikes__single-button,
-#bikes__premium-button,
-#bikes__city-button {
+#js-products__single-button,
+#js-products__premium-button,
+#js-products__city-button {
   width: 100%;
   height: 100%;
   transition: all 0.25s ease;
 }
 
-#bikes__single-button {
+#js-products__single-button {
   color:white;
   background: black;
 }
 
-.bikes__single-slider,
-.bikes__premium-slider,
-.bikes__city-slider {
+.products__slider {
   position: relative;
 }
 
-#bikes__single-speed {
+#js-products__single-slider {
   display: block;
 }
 
-#bikes__premium-series {
+#js-products__premium-slider {
   display: none;
 }
 
-#bikes__city {
+#js-products__city-slider {
   display: none;
 }
 
-.bikes__slider-next {
+.products__slider-next {
   display: inline-block;
   margin-left: auto;
 
@@ -66,7 +63,7 @@
   }
 }
 
-.bikes__slider-prev {
+.products__slider-prev {
   display: inline-block;
 
   &:hover {
@@ -74,33 +71,41 @@
   }
 }
 
-.bikes__customize-controls img {
+.products__customize-controls img {
   width: 24px;
   z-index: 1;
 }
 
-.bikes__customize-controls {
+.products__customize-controls {
   display: flex;
 }
 
-.bikes__slider-button {
+.products__slider-button {
   background-color: black;
   color: #ffffff;
   padding: 10px 20px 10px 20px;
   border-radius: 10px;
-  margin: 20px;
+  margin: 20px auto;
+  width: 100px;
 
   &:hover {
     background-color: #606060;
   }
 }
 
-.bikes__slider-text {
+.products__slider-text {
   font-weight: bold;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 @include desktop {
-  .bikes {
+  .products {
     &__nav-item {
       display: inline-block;
       border: 2px solid black;
