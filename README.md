@@ -1,9 +1,9 @@
 ## Build
 ### Development build and watch mode
-`` npm start``
+``open "dist" folder (https://evelingreba.github.io/frontend_js/dist/)``
 
 ### Production build
-```npm run build``` 
+```run gulp``` 
 
 ## Technologies & techniques used
 * JS ES6, ES6 Modules,
