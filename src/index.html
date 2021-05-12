@@ -364,36 +364,55 @@ title: BikeShop | Home
     <div class="contact__content">
         <h3 class="contact__title">CONTACT US</h3>
         <div class="contact__sub-title">Please contact us for all inquiries and purchase options.</div>
-        <form action="#" method="get">
-            <div>
-                <input type="text" name="name" placeholder="NAME" class="contact__name">
-                <input type="text" name="surname" placeholder="SURNAME" class="contact__name">
+        <form id="contact__form" name="contact__form" class="js-form-validate">
+            <div class="contact__name">
+                <input type="text" name="name" placeholder="NAME" class="contact__name-item js-data-required">
+                <p class="js-contact__required-validate"></p>
             </div>
-            <div><input type="email" name="email" placeholder="USER@DOMAIN.COM" class="contact__field"></div>
-            <div><textarea name="message" placeholder="MESSAGE" class="contact__field"></textarea></div>
-            <div><label><span class="contact__label-title">Choose Bikes Category </span>
-                <label class="contact__radio"><input type="radio" name="contact__radio" value="Fixed / Single Speed">
-                    Fixed / Single
-                    Speed</label>
-                <label class="contact__radio"><input type="radio" name="contact__radio" value="Premium Series"> Premium
-                    Series</label>
-                <label class="contact__radio"><input type="radio" name="contact__radio" value="City Bikes"> City
-                    Bikes</label>
-            </label></div>
-            <div><label><span class="contact__label-title">Select Bikes Category </span>
-                <select name="contact__select" class="contact__select">
-                    <option selected value="Select Category">Select Category</option>
-                    <option value="Fixed / Single Speed">Fixed / Single Speed</option>
-                    <option value="Premium Series">Premium Series</option>
-                    <option value="City Bikes">City Bikes</option>
-                </select>
-            </label></div>
-
-
-            <label><input type="checkbox" name="agree"> I agree to the Bike Shop <a href="#" title="Terms & Conditions">Terms
-                & Conditions</a> and <a href="#" title="Privacy Policy">Privacy Policy</a>
-            </label>
-            <input type="submit" value="SEND" class="contact__send">
+            <div class="contact__name">
+                <input type="text" name="surname" placeholder="SURNAME" class="contact__name-item js-data-required">
+                <p class="js-contact__required-validate"></p>
+            </div>
+            <div class="contact__field">
+                <input type="email" name="email" placeholder="USER@DOMAIN.COM"
+                       class="contact__field-item js-contact__email js-data-required">
+                <p class="js-contact__email-validate js-contact__required-validate"></p>
+            </div>
+            <div class="contact__field">
+                <textarea name="message" placeholder="MESSAGE" class="contact__field-item"></textarea>
+            </div>
+            <div class="contact__field">
+                <label><span class="contact__label-title">Choose Bikes Category </span>
+                    <label class="contact__radio"><input type="radio" name="contact__radio"
+                                                         value="Fixed / Single Speed">
+                        Fixed / Single
+                        Speed</label>
+                    <label class="contact__radio"><input type="radio" name="contact__radio" value="Premium Series">
+                        Premium
+                        Series</label>
+                    <label class="contact__radio"><input type="radio" name="contact__radio" value="City Bikes"> City
+                        Bikes</label>
+                </label>
+            </div>
+            <div class="contact__field">
+                <label><span class="contact__label-title">Select Bikes Category </span>
+                    <select name="contact__select" class="contact__field-item">
+                        <option selected value="Select Category">Select Category</option>
+                        <option value="Fixed / Single Speed">Fixed / Single Speed</option>
+                        <option value="Premium Series">Premium Series</option>
+                        <option value="City Bikes">City Bikes</option>
+                    </select>
+                </label>
+            </div>
+            <div class="contact__field">
+                <label><input type="checkbox" name="agree" class="js-data-required"> I agree to the Bike Shop <a
+                        href="#"
+                        title="Terms & Conditions">Terms
+                    & Conditions</a> and <a href="#" title="Privacy Policy">Privacy Policy</a>
+                </label>
+                <p class="js-contact__required-validate"></p>
+            </div>
+            <input type="submit" class="contact__submit js-contact__submit">
         </form>
     </div>
 </section>

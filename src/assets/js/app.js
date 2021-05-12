@@ -1,3 +1,5 @@
+import Contact from "./contact/contact";
+
 console.log('file 1');
 // import { tns } from "../tiny-slider/src/tiny-slider";
 import Header from "./header/header.js";
@@ -8,7 +10,7 @@ import Comments from "./comments/comments";
 //Header module
 const hamburgerElement = document.querySelector(".header__hamburger");
 
-if(hamburgerElement) {
+if (hamburgerElement) {
     const header = new Header(hamburgerElement);
     header.init();
 }
@@ -17,13 +19,18 @@ if(hamburgerElement) {
 const banner = new Banner();
 banner.init();
 
-
 //Products module
 const products = new Products(document.querySelector('.js-products__content'));
 products.showSingleBikes();
-
 
 //Comments module
 const comments = new Comments();
 comments.init().then(response => response.json());
 
+//Contact Us module
+document.querySelector('.js-contact__submit').addEventListener("click", validateForm);
+function validateForm(e) {
+    e.preventDefault();
+    const contact = new Contact();
+    contact.validate(this);
+}

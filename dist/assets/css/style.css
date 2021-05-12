@@ -523,7 +523,7 @@ a {
 .basket__icon {
   display: none; }
 
-@media screen and (min-width: 1025px) and (min-height: 1025px) {
+@media screen and (min-width: 1366px) {
   .header {
     height: 70px; }
     .header__content {
@@ -549,7 +549,7 @@ a {
   .header__hamburger {
     display: none; } }
 
-@media screen and (min-width: 1025px) and (min-height: 1025px) {
+@media screen and (min-width: 1366px) {
   .header__nav-item {
     position: relative;
     color: #FFFFFF; }
@@ -765,7 +765,7 @@ a {
       width: 48px;
       height: 48px; } }
 
-@media screen and (min-width: 1025px) and (min-height: 1025px) {
+@media screen and (min-width: 1025px) {
   .banner {
     font-size: 3rem; }
     .banner__title {
@@ -872,7 +872,7 @@ a {
   -webkit-box-orient: vertical;
   overflow: hidden; }
 
-@media screen and (min-width: 1025px) and (min-height: 1025px) {
+@media screen and (min-width: 1025px) {
   .products__nav-item {
     display: inline-block;
     border: 2px solid black;
@@ -910,30 +910,32 @@ a {
   .comments__name {
     font-weight: bold; }
 
-@media screen and (min-width: 1025px) and (min-height: 1025px) {
+@media screen and (min-width: 1025px) {
   .comments__content {
     padding: 150px 20px;
     font-size: 18px; } }
 
 .contact {
-  min-height: 100vh;
+  min-height: calc(100vh - 70px);
   background-image: url("../images/CONTACT_US_BG.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
   .contact__content {
-    padding: 150px 20px;
+    padding: 50px 20px;
     max-width: 100%;
     max-width: 1600px;
     margin: 0 auto; }
   .contact__field, .contact__name {
+    vertical-align: top;
+    width: 204px;
+    margin: 0 auto; }
+  .contact__field-item, .contact__name-item {
     border-radius: 5px;
     padding: 10px;
+    width: 204px;
     margin: 10px auto;
-    border: 1px solid grey;
-    width: 60%; }
-  .contact textarea {
-    width: 60%; }
+    border: 1px solid grey; }
   .contact__label-title {
     display: block;
     font-weight: bold; }
@@ -941,12 +943,7 @@ a {
     display: block;
     text-align: left;
     padding: 10px 0; }
-  .contact__select {
-    margin: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    width: 204px; }
-  .contact__send {
+  .contact__submit {
     display: block;
     width: 204px;
     margin: 20px auto;
@@ -955,17 +952,24 @@ a {
     background-color: grey;
     border: none;
     color: white; }
-    .contact__send:hover {
+    .contact__submit:hover {
       background-color: black; }
 
 @media screen and (min-width: 768px) {
   .contact {
     font-size: 18px; }
-    .contact__field {
-      width: 435px; }
-    .contact textarea {
+    .contact__content {
+      padding: 100px 20px; }
+    .contact__name {
+      display: inline-block;
+      width: 218px; }
+      .contact__name-item {
+        width: 210px; }
+    .contact__field, .contact__field-item {
       width: 435px; }
     .contact__radio {
-      margin-left: 20%; }
-    .contact__select {
-      width: 457px; } }
+      width: 435px; } }
+
+@media screen and (min-width: 1025px) {
+  .contact__content {
+    padding: 150px 20px; } }

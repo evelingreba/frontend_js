@@ -33,6 +33,7 @@
         "IE 10"
     ],
     "dependencies": {
+        "formvalidation": "^0.6.2-dev",
         "tiny-slider": "^2.9.3"
     }
 }

@@ -79,7 +79,6 @@
   background: black;
   color: white;
   cursor: pointer;
-  //display: flex;
   font-size: 14px;
   height: 100vh;
   left: -50%;
@@ -130,7 +129,7 @@
 }
 
 
-@include desktop {
+@include desktop_header {
 .header {
   height: 70px;
 

@@ -1,9 +1,7 @@
 @mixin breakpoint($br) {
-
   @media screen and (min-width: $br) {
     @content;
   }
-
 }
 
 @mixin tablet($size: 768px) {
@@ -12,11 +10,15 @@
   }
 }
 
-@mixin desktop($size: 1025px, $height: 1025px) {
+@mixin desktop($size: 1025px) {
   @media screen and (min-width: $size) {
-    @media screen and (min-height: $height){
-      @content;
-    }
+    @content;
+  }
+}
+
+@mixin desktop_header($size: 1367px) {
+  @media screen and (min-width: $size) {
+    @content;
   }
 }
 
